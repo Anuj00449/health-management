@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard">
+    <h1>My Appointments</h1>
+    <div class="appointments">
+      <div class="appointment-card">
+        <h2>Dr. ANURADHA H K </h2>
+        <p><strong>Specialization:</strong> Dermatologist</p>
+        <p><strong>Contact:</strong> anuradha.09@email.com</p>
+        <p><strong>Phone:</strong> +1 234 567 890</p>
+        <p><strong>Address:</strong>Vanivilas Hospital , Rajendarnagar-789006</p>
+        <button class="cancel-btn">Cancel Appointment</button>
+      </div>
+      <div class="appointment-card">
+        <h2>Dr. SRIHARI DAS</h2>
+                <p><strong>Specialization:</strong> Cardiologist</p>
+                <p><strong>Contact:</strong> srihari.das@email.com</p>
+                <p><strong>Phone:</strong> +1 456 789 012</p>
+                <p><strong>Address:</strong> General Hospital,Jaya Nagar,Chennai-560029</p>
+        <button class="cancel-btn">Cancel Appointment</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<style>
+    /* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.appointments {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.appointment-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.appointment-card:hover {
+  transform: scale(1.05);
+}
+
+.appointment-card h3 {
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.appointment-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.cancel-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.cancel-btn:hover {
+  background-color: #e60000;
+}
+
+</style>
